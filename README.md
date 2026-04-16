@@ -68,9 +68,3 @@ Use these credentials to test the various roles in the application. (Password fo
 | **User**        | `user@storerating.com`  | `Admin@123` |
 
 ---
-
-## Recent Architectural Changes
-
-- **Removed Prisma**: The project was migrated away from Prisma ORM to raw `mysql2` promises for better control over SQL execution.
-- **Express Backend**: Replaced Next.js App Router API routes with a dedicated Express.js backend (`server.ts`).
-- **Development Proxy**: Next.js automatically proxies `/api/*` requests to the Express server running on port `3001` to prevent CORS issues.
